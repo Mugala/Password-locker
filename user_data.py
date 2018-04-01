@@ -64,3 +64,12 @@ class Users:
                     return True
 
         return False
+
+    @classmethod
+    def display_accounts(cls):
+        '''
+        method that returns the account details
+        '''
+        return cls.account_details
+
+    
