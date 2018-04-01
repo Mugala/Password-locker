@@ -25,4 +25,12 @@ class Users:
         save_account method saves users objects into account_details
         '''
 
-        Users.account_details.append(self)    
+        Users.account_details.append(self)   
+
+    def delete_account(self):
+
+        '''
+        delete_account method deletes a saved account details from the account_details
+        '''
+
+        Users.account_details.remove(self) 

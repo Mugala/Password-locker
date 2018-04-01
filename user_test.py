@@ -59,7 +59,7 @@ class TestUsers(unittest.TestCase):
             test_account = Users("account","username","test@user.com","password") # registered new account
             test_account.save_account()
 
-            self.new_user_data.test_delete_account()
+            self.new_user_data.delete_account()
             self.assertEqual(len(Users.account_details),1)
 
 
