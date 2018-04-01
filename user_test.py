@@ -35,6 +35,12 @@ class TestUsers(unittest.TestCase):
         self.new_user_data.save_account() # saving the new account details
         self.assertEqual(len(Users.account_details),1)
 
+    def tearDown(self):
+            '''
+            tearDown method that does clean up after each test case has run.
+            '''
+            Users.account_details = []
+
     def test_save_multiple_accounts(self):
             '''
             test_save_multiple_contact to check if we can save multiple contact
