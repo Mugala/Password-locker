@@ -34,3 +34,18 @@ class Users:
         '''
 
         Users.account_details.remove(self) 
+
+    @classmethod
+    def find_by_username(cls,username):
+        '''
+        Method that takes in a username and returns the account details that matches that username.
+
+        Args:
+            username: Usernme that matches the account
+        Returns :
+            Account details of the user that matches the username.
+        '''
+
+        for user_data in cls.account_details:
+            if user_data.username == username:
+                return user_data

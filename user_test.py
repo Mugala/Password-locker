@@ -62,6 +62,19 @@ class TestUsers(unittest.TestCase):
             self.new_user_data.delete_account()
             self.assertEqual(len(Users.account_details),1)
 
+    def test_find_details_by_username(self):
+        '''
+        test to check if we can find the details of an account by typing the username and display information
+        '''
+
+        self.new_user_data.save_account()
+        test_account = Users("account","username","test@user.com","password") #registered new account
+        test_account.save_account()
+
+        found_account = Users.find_by_username("username")
+
+        self.assertEqual(found_account.email,test_account.email)
+
 
 if __name__ == '__main__':
     unittest.main()
