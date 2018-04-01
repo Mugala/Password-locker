@@ -10,12 +10,9 @@ class Users:
 
     def __init__(self,account_name,username,email,password):
 
-        '''
-        __init__ method that helps us define properties for our objects.
-
-        Args:
-            account_name: New user account name.
-            username : New user username.
-            email: New user email.
-            password : New user password.
-        '''
+      
+            self.account_name = account_name
+            self.username = username
+            self.email = email
+            self.password = password
+        
