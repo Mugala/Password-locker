@@ -88,6 +88,13 @@ class TestUsers(unittest.TestCase):
 
         self.assertTrue(account_exists)
 
+    def test_display_all_accounts(self):
+        '''
+        method that returns a list of all accounts saved
+        '''
+
+        self.assertEqual(Users.display_accounts(),Users.account_details)
+
 
 if __name__ == '__main__':
     unittest.main()
