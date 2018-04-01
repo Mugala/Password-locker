@@ -1,4 +1,4 @@
-##Password Locker
+#Password Locker
 
 #Password Locker application. Password Locker is an application that helps you manage the credentials for all your online accounts. Generates Passwords and secures them for you in on convinient place. 
 
@@ -17,10 +17,10 @@ Then input their social media accounts email address and other credentials that 
 
 #*Information stored.*
 
-`*The online platform*`
-`*The username used*`
-`*The password used/generated*`
-`*The email address*`
+`The online platform`
+`The username used`
+`The password used/generated`
+`The email address`
 
 #Setup/Installation Requirements.
 
@@ -33,7 +33,7 @@ Also workking on implementing a copy and paste feature on the clipboard as well 
 
 #Technologies Used.
 
-The game was build mainly with `*python 3.6*`... 
+The game was build mainly with `python 3.6`... 
 
 ##License.
 
