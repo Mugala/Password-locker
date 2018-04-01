@@ -15,4 +15,14 @@ class Users:
             self.username = username
             self.email = email
             self.password = password
-        
+
+
+    account_details = [] # Empty container no account registered
+     # Init method up here
+    def save_account(self):
+
+        '''
+        save_account method saves users objects into account_details
+        '''
+
+        Users.account_details.append(self)    
