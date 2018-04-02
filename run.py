@@ -81,16 +81,16 @@ def main():
                     elif short_code == 'da':
 
                             if display_accounts():
-                                    print("Here is a list of all your online accounts")
+                                    print("Here is a list of your online platforms")
                                     print('\n')
 
                                     for user_data in display_accounts():
-                                            print(f"{user_data.account_name} {user_data.user_name} .....{user_data.email}")
+                                            print(f"{user_data.account_name} {user_data.username} .....{user_data.password}")
 
                                     print('\n')
                             else:
                                     print('\n')
-                                    print("You dont seem to have any accounts saved yet")
+                                    print("You dont seem to have any accounts saved")
                                     print('\n')
 
                     elif short_code == 'fa':
@@ -98,13 +98,13 @@ def main():
                             print("Enter the username you want to search for")
 
                             search_username = input()
-                            if check_existing_contacts(search_number):
-                                    search_contact = find_contact(search_number)
-                                    print(f"{search_contact.first_name} {search_contact.last_name}")
+                            if check_existing_accounts(search_username):
+                                    search_account = find_account(search_username)
+                                    print(f"{search_account.account_name} {search_account.username}")
                                     print('-' * 20)
 
-                                    print(f"Phone number.......{search_contact.number}")
-                                    print(f"Email address.......{search_contact.email}")
+                                    print(f"User name.......{search_account.username}")
+                                    print(f"Password.......{search_account.password}")
                             else:
                                     print("That contact does not exist")
 
