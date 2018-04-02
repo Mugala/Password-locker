@@ -11,7 +11,7 @@ class Credential:
     def __init__(self,gen_passcode,): #the intance variable
 
          
-            self.gen_passcoode = gen_passcode
+            self.gen_passcode = gen_passcode
 
 
     account_desc = [] # Empty container for storing passwords
