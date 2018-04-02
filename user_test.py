@@ -1,5 +1,6 @@
 import unittest # Importing the unittest module allows us to test
 from user_data import Users # Importing the users class from user_data module
+import pyperclip # importing pyperclip for copy and past function.
 
 class TestUsers(unittest.TestCase):
 
@@ -94,6 +95,16 @@ class TestUsers(unittest.TestCase):
         '''
 
         self.assertEqual(Users.display_accounts(),Users.account_details)
+
+    def test_copy_password(self):
+        '''
+        Test to confirm that we are copying the password from a found account details
+        '''
+
+        self.new_user_data.save_account()
+        Users.copy_password("password")
+
+        self.assertEqual(self.new_user_data.password,pyperclip.paste())
 
 
 if __name__ == '__main__':

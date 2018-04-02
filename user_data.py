@@ -72,4 +72,4 @@ class Users:
         '''
         return cls.account_details
 
-    
+
