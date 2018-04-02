@@ -96,15 +96,6 @@ class TestUsers(unittest.TestCase):
 
         self.assertEqual(Users.display_accounts(),Users.account_details)
 
-    def test_copy_password(self):
-        '''
-        Test to confirm that we are copying the password from a found account details
-        '''
-
-        self.new_user_data.save_account()
-        Users.copy_password("password")
-
-        self.assertEqual(self.new_user_data.password,pyperclip.paste())
 
 
 if __name__ == '__main__':

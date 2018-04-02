@@ -1,3 +1,5 @@
+import pyperclip
+
 class Users:
     """
     Class that generates new instances of users. This class will hold the users data that they input,
@@ -71,5 +73,8 @@ class Users:
         method that returns the account details
         '''
         return cls.account_details
+
+
+     
 
 
