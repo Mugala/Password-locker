@@ -104,6 +104,7 @@ def main():
                                     print('-' * 20)
 
                                     print(f"User name.......{search_account.username}")
+                                    print(f"online platform.......{search_account.account_name}")
                                     print(f"Password.......{search_account.password}")
                             else:
                                     print("That contact does not exist")
