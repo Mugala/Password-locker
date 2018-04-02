@@ -16,3 +16,11 @@ class Credential:
 
     account_desc = [] # Empty container for storing passwords
      # Init method up here
+
+    def store_password(self):
+
+        '''
+        store_password method helps store the generated passwords for the users
+        '''
+
+        Credential.account_desc.append(self)  
